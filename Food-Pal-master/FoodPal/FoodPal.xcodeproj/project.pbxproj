@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8A0E08B4886C80DE0607D8E /* Pods_FoodPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48E3A56DDA30BADC930D106 /* Pods_FoodPal.framework */; };
+		C307DB331F30515D00675985 /* collectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307DB321F30515D00675985 /* collectionCell.swift */; };
+		C307DB351F31195B00675985 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C307DB341F31195B00675985 /* NotificationManager.swift */; };
+		C30F43CD1F13E205005829F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F43CC1F13E205005829F4 /* AppDelegate.swift */; };
+		C30F43CF1F13E205005829F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F43CE1F13E205005829F4 /* HomeViewController.swift */; };
+		C30F43D21F13E205005829F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30F43D01F13E205005829F4 /* Main.storyboard */; };
+		C30F43D41F13E205005829F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30F43D31F13E205005829F4 /* Assets.xcassets */; };
+		C30F43D71F13E205005829F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30F43D51F13E205005829F4 /* LaunchScreen.storyboard */; };
+		C30F43DF1F13E6BB005829F4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F43DE1F13E6BB005829F4 /* FoodCell.swift */; };
+		C30F43E41F14241F005829F4 /* ItemScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F43E31F14241F005829F4 /* ItemScannerViewController.swift */; };
+		C30F43E61F14268D005829F4 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F43E51F14268D005829F4 /* CategoriesViewController.swift */; };
+		C30F43E91F1428CA005829F4 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30F43E81F1428CA005829F4 /* CategoryCell.swift */; };
+		C32198BC1F182E1300E726BB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32198BB1F182E1300E726BB /* Product.swift */; };
+		C32198BE1F1937C400E726BB /* FoodObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32198BD1F1937C400E726BB /* FoodObject.swift */; };
+		C39DA7B51F29BA7F00E4BDD1 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DA7B41F29BA7D00E4BDD1 /* DateHelper.swift */; };
+		C39DA7B71F2A69AD00E4BDD1 /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39DA7B61F2A69AD00E4BDD1 /* PhotoHelper.swift */; };
+		C39F48351F18162700790F53 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C39F48331F18162700790F53 /* Model.xcdatamodeld */; };
+		C39F48371F181BA100790F53 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39F48361F181BA100790F53 /* CoreDataHelper.swift */; };
+		C3D39A721F2133D600137C31 /* CategoryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D39A711F2133D600137C31 /* CategoryObject.swift */; };
+		C3D39A781F21640900137C31 /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D39A771F21640900137C31 /* NewCategoryViewController.swift */; };
+		C3E9E30D1F1D427D00BD9944 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E9E30C1F1D427D00BD9944 /* SegueFromLeft.swift */; };
+		C3F8D2A51F16923100B4D21F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F8D2A41F16923100B4D21F /* CameraViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02316F5F8636D358AB2D5F57 /* Pods-FoodPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPal/Pods-FoodPal.release.xcconfig"; sourceTree = "<group>"; };
+		2AE7AEADEDC0F7897BEEE122 /* Pods-FoodPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPal/Pods-FoodPal.release.xcconfig"; sourceTree = "<group>"; };
+		596D1A25486BAE3C5FE4027F /* Pods-FoodPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPal/Pods-FoodPal.debug.xcconfig"; sourceTree = "<group>"; };
+		837CCA5CC96FBC2960DFD1A3 /* Pods-FoodPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPal/Pods-FoodPal.debug.xcconfig"; sourceTree = "<group>"; };
+		A48E3A56DDA30BADC930D106 /* Pods_FoodPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C307DB321F30515D00675985 /* collectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionCell.swift; sourceTree = "<group>"; };
+		C307DB341F31195B00675985 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		C30F43C91F13E205005829F4 /* FoodPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30F43CC1F13E205005829F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C30F43CE1F13E205005829F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C30F43D11F13E205005829F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C30F43D31F13E205005829F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C30F43D61F13E205005829F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C30F43D81F13E205005829F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C30F43DE1F13E6BB005829F4 /* FoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		C30F43E31F14241F005829F4 /* ItemScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemScannerViewController.swift; sourceTree = "<group>"; };
+		C30F43E51F14268D005829F4 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		C30F43E81F1428CA005829F4 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		C32198BB1F182E1300E726BB /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C32198BD1F1937C400E726BB /* FoodObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodObject.swift; sourceTree = "<group>"; };
+		C39DA7B41F29BA7D00E4BDD1 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		C39DA7B61F2A69AD00E4BDD1 /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
+		C39F48341F18162700790F53 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C39F48361F181BA100790F53 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		C3D39A711F2133D600137C31 /* CategoryObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryObject.swift; sourceTree = "<group>"; };
+		C3D39A771F21640900137C31 /* NewCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
+		C3E9E30C1F1D427D00BD9944 /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		C3F8D2A41F16923100B4D21F /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30F43C61F13E205005829F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8A0E08B4886C80DE0607D8E /* Pods_FoodPal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11F2AD950C0E6BD198FDBA5A /* PodsX */ = {
+			isa = PBXGroup;
+			children = (
+				596D1A25486BAE3C5FE4027F /* Pods-FoodPal.debug.xcconfig */,
+				2AE7AEADEDC0F7897BEEE122 /* Pods-FoodPal.release.xcconfig */,
+			);
+			name = PodsX;
+			sourceTree = "<group>";
+		};
+		2E52E9CCFB539EB040AB0C0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A48E3A56DDA30BADC930D106 /* Pods_FoodPal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DA21D6DBBF8EAB5D347E099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				837CCA5CC96FBC2960DFD1A3 /* Pods-FoodPal.debug.xcconfig */,
+				02316F5F8636D358AB2D5F57 /* Pods-FoodPal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C30F43C01F13E205005829F4 = {
+			isa = PBXGroup;
+			children = (
+				C30F43CB1F13E205005829F4 /* FoodPal */,
+				C30F43CA1F13E205005829F4 /* Products */,
+				11F2AD950C0E6BD198FDBA5A /* PodsX */,
+				2E52E9CCFB539EB040AB0C0C /* Frameworks */,
+				4DA21D6DBBF8EAB5D347E099 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C30F43CA1F13E205005829F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30F43C91F13E205005829F4 /* FoodPal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30F43CB1F13E205005829F4 /* FoodPal */ = {
+			isa = PBXGroup;
+			children = (
+				C30F43CC1F13E205005829F4 /* AppDelegate.swift */,
+				C30F43E71F1426E9005829F4 /* View Controllers */,
+				C3D39A731F21341300137C31 /* CoreDataModels */,
+				C3D39A741F21343E00137C31 /* Helpers */,
+				C3D39A761F21346200137C31 /* Model */,
+				C30F43EA1F1428E3005829F4 /* Cells */,
+				C30F43D01F13E205005829F4 /* Main.storyboard */,
+				C39F48331F18162700790F53 /* Model.xcdatamodeld */,
+				C30F43D31F13E205005829F4 /* Assets.xcassets */,
+				C30F43D51F13E205005829F4 /* LaunchScreen.storyboard */,
+				C30F43D81F13E205005829F4 /* Info.plist */,
+			);
+			path = FoodPal;
+			sourceTree = "<group>";
+		};
+		C30F43E71F1426E9005829F4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C30F43E51F14268D005829F4 /* CategoriesViewController.swift */,
+				C30F43CE1F13E205005829F4 /* HomeViewController.swift */,
+				C30F43E31F14241F005829F4 /* ItemScannerViewController.swift */,
+				C3F8D2A41F16923100B4D21F /* CameraViewController.swift */,
+				C3D39A771F21640900137C31 /* NewCategoryViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C30F43EA1F1428E3005829F4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C30F43DE1F13E6BB005829F4 /* FoodCell.swift */,
+				C30F43E81F1428CA005829F4 /* CategoryCell.swift */,
+				C307DB321F30515D00675985 /* collectionCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		C3D39A731F21341300137C31 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C32198BD1F1937C400E726BB /* FoodObject.swift */,
+				C3D39A711F2133D600137C31 /* CategoryObject.swift */,
+			);
+			name = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		C3D39A741F21343E00137C31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C3E9E30C1F1D427D00BD9944 /* SegueFromLeft.swift */,
+				C39F48361F181BA100790F53 /* CoreDataHelper.swift */,
+				C39DA7B41F29BA7D00E4BDD1 /* DateHelper.swift */,
+				C39DA7B61F2A69AD00E4BDD1 /* PhotoHelper.swift */,
+				C307DB341F31195B00675985 /* NotificationManager.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C3D39A761F21346200137C31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C32198BB1F182E1300E726BB /* Product.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30F43C81F13E205005829F4 /* FoodPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30F43DB1F13E205005829F4 /* Build configuration list for PBXNativeTarget "FoodPal" */;
+			buildPhases = (
+				3B2E502112D9E2106F0EF3E5 /* [CP] Check Pods Manifest.lock */,
+				C30F43C51F13E205005829F4 /* Sources */,
+				C30F43C61F13E205005829F4 /* Frameworks */,
+				C30F43C71F13E205005829F4 /* Resources */,
+				95DD94EC3D844ECB2BAF49D6 /* [CP] Embed Pods Frameworks */,
+				104527BD7E170836ABD443BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodPal;
+			productName = FoodPal;
+			productReference = C30F43C91F13E205005829F4 /* FoodPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30F43C11F13E205005829F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Make School";
+				TargetAttributes = {
+					C30F43C81F13E205005829F4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = X3T6G6B4MK;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = C30F43C41F13E205005829F4 /* Build configuration list for PBXProject "FoodPal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30F43C01F13E205005829F4;
+			productRefGroup = C30F43CA1F13E205005829F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30F43C81F13E205005829F4 /* FoodPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30F43C71F13E205005829F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30F43D71F13E205005829F4 /* LaunchScreen.storyboard in Resources */,
+				C30F43D41F13E205005829F4 /* Assets.xcassets in Resources */,
+				C30F43D21F13E205005829F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		104527BD7E170836ABD443BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodPal/Pods-FoodPal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B2E502112D9E2106F0EF3E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95DD94EC3D844ECB2BAF49D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodPal/Pods-FoodPal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30F43C51F13E205005829F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39DA7B51F29BA7F00E4BDD1 /* DateHelper.swift in Sources */,
+				C30F43CF1F13E205005829F4 /* HomeViewController.swift in Sources */,
+				C30F43E61F14268D005829F4 /* CategoriesViewController.swift in Sources */,
+				C32198BE1F1937C400E726BB /* FoodObject.swift in Sources */,
+				C30F43E91F1428CA005829F4 /* CategoryCell.swift in Sources */,
+				C3E9E30D1F1D427D00BD9944 /* SegueFromLeft.swift in Sources */,
+				C39DA7B71F2A69AD00E4BDD1 /* PhotoHelper.swift in Sources */,
+				C3D39A721F2133D600137C31 /* CategoryObject.swift in Sources */,
+				C39F48351F18162700790F53 /* Model.xcdatamodeld in Sources */,
+				C307DB331F30515D00675985 /* collectionCell.swift in Sources */,
+				C30F43E41F14241F005829F4 /* ItemScannerViewController.swift in Sources */,
+				C3F8D2A51F16923100B4D21F /* CameraViewController.swift in Sources */,
+				C307DB351F31195B00675985 /* NotificationManager.swift in Sources */,
+				C39F48371F181BA100790F53 /* CoreDataHelper.swift in Sources */,
+				C32198BC1F182E1300E726BB /* Product.swift in Sources */,
+				C3D39A781F21640900137C31 /* NewCategoryViewController.swift in Sources */,
+				C30F43CD1F13E205005829F4 /* AppDelegate.swift in Sources */,
+				C30F43DF1F13E6BB005829F4 /* FoodCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C30F43D01F13E205005829F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30F43D11F13E205005829F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C30F43D51F13E205005829F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30F43D61F13E205005829F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C30F43D91F13E205005829F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C30F43DA1F13E205005829F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30F43DC1F13E205005829F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 596D1A25486BAE3C5FE4027F /* Pods-FoodPal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X3T6G6B4MK;
+				INFOPLIST_FILE = FoodPal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.FoodBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1e5de7c9-a51d-400b-839a-980d7e6eb0b0";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Development on Dev Certificate";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C30F43DD1F13E205005829F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE7AEADEDC0F7897BEEE122 /* Pods-FoodPal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X3T6G6B4MK;
+				INFOPLIST_FILE = FoodPal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.FoodBuddy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1e5de7c9-a51d-400b-839a-980d7e6eb0b0";
+				PROVISIONING_PROFILE_SPECIFIER = "iOS Development on Dev Certificate";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30F43C41F13E205005829F4 /* Build configuration list for PBXProject "FoodPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30F43D91F13E205005829F4 /* Debug */,
+				C30F43DA1F13E205005829F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30F43DB1F13E205005829F4 /* Build configuration list for PBXNativeTarget "FoodPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30F43DC1F13E205005829F4 /* Debug */,
+				C30F43DD1F13E205005829F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C39F48331F18162700790F53 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C39F48341F18162700790F53 /* Model.xcdatamodel */,
+			);
+			currentVersion = C39F48341F18162700790F53 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C30F43C11F13E205005829F4 /* Project object */;
+}
